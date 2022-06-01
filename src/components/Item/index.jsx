@@ -15,7 +15,7 @@ export default class Item extends Component {
 
     handleDelete = (id)=>{
      return () =>{
-       if (window.confirm('确定删除？')) {
+       if (window.confirm('confirm to delete?')) {
         this.props.deleteTodo(id)}
      }
     }
