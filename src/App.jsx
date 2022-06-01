@@ -7,9 +7,9 @@ import List from './components/List'
 export default class App extends Component {
     state = {
         todos:[
-            {id:'001',name:'吃饭',done:true},
-            {id:'002',name:'睡觉',done:false},
-            {id:'003',name:'学习',done:true},
+            {id:'001',name:'eating',done:true},
+            {id:'002',name:'sleeping',done:false},
+            {id:'003',name:'learning',done:true},
         ]}
   
     addTodo = (todoObj)=>{

@@ -7,7 +7,7 @@ export default class Footer extends Component {
     }
  
     clearDone = (event)=>{    
-    if (window.confirm('确定删除？')) {
+    if (window.confirm('confirm to delete the items?')) {
     this.props.clearDone(event.target.checked)
     }}
 
@@ -26,9 +26,9 @@ export default class Footer extends Component {
                 </label>
                 
                 <span>
-                    <span>已完成{todosDone}</span> / 全部{todos.length}
+                    <span>Done items ({todosDone})</span> / All items ({todos.length})
                 </span>
-                <button className="btn btn-danger" onClick={this.clearDone} >清除已完成任务</button>
+                <button className="btn btn-danger" onClick={this.clearDone} >clear finished items</button>
             </div>
         );
     }

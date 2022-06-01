@@ -47,7 +47,7 @@ export default class Item extends Component {
                     <button className="btn btn-danger" 
                     style={{ display: mouseIsEnter ? 'block' : 'none' }}
                     onClick = {this.handleDelete(id)}
-                    >删除</button>
+                    >delete</button>
                    
                 </li>
 
